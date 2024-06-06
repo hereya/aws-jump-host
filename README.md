@@ -35,3 +35,6 @@ export USER=<jumpHostUser> # hereya workspace env jumpHostUser -w <workspace>
 export HOST=<jumpHostPublicIp> # hereya workspace env jumpHostPublicIp -w <workspace>
 ssh -i key.pem -L ${LOCAL_PORT}:${DOCUMENTDB_HOST}:${REMOTE_PORT} ${USER}@${HOST} -N
 ```
+
+* Use your favorite Mongo client to connect the database on `mongodb://127.0.0.1:${LOCAL_PORT}`
+
