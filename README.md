@@ -9,7 +9,7 @@ The Jump host is particularly useful for creating ssh tunnels to connect to not 
 It is useful to install this package in a workspace so that it is not deployed as a project package. 
 
 ```bash
-hereya workspace install -w <workspace> hereya/aws-jump-host
+hereya workspace install hereya/aws-jump-host -w <workspace>
 ```
 
 This package exports all the necessary data to create an ssh tunnel such as `jumpHostPublicIp`, `jumpHostUser` and `jumpHostSshPrivateKey`, the ssh private key of the host in pem format.
